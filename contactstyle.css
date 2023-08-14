@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+* {
+  margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family:'Poppins', san-serif;
+	scroll-behavior: smooth;
+}
+
+body, html {
+	height: 100%;
+	background-color:#F0EFEE;
+	text-align:center;
+}
+
+.contact-container{
+	display: flex;
+	justify-content:center;
+	width: 100%;
+}
+
+.infor{
+	background-image: url('dental-bg.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: #000;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height:auto
+}
+
+.map{
+	border-radius:16px;
+}
+
+.infor h1{
+	font-size:40px;
+	text-decoration: underline;
+	text-decoration-color: #FACD11;
+  text-decoration-thickness: 3px;
+}
+
+.infor h2{
+	font-size: 16px;
+	font-style: italic;
+	margin-top:20px;
+}
+
+/*style button*/
+.infor .button1{
+	background-color: #6d6dd5;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	opacity: 95%;
+	border-radius: 18px;
+	transition: all 1s;
+}
+
+.infor .button1:hover{
+	background-color: #6B70FA;
+  transform: translateY(2.5px);
+}
+
+.infor .booking button{
+	background-color: #FADE6B;
+	border:none;
+	color: #000;
+	font-weight: bold;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	opacity: 95%;
+	border-radius: 18px;
+	transition: all 1s;
+	margin-top: 50px;
+}
+
+.infor .booking button:hover{
+	background-color: #AD9328;
+}
+
+
+@media (max-width:700px){
+	.infor{
+		height: 600px;
+	}
+
+	.contact-container{
+		flex-direction: column-reverse;
+	}
+	
+	.map{
+		display: none;
+	}
+}
