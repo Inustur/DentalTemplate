@@ -2,7 +2,7 @@
 
 body, html {
   height: 100%;
-  background-color:#F0EFEE;
+  background-color:#00BFFF;
   text-align:center;
 }
 
@@ -24,6 +24,7 @@ body, html {
 }
 
 .heading h1{
+  background-color:#F0EFEE;
   font-size: 60px;
   text-decoration: underline;
   text-decoration-color: #FACD11;
