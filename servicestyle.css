@@ -2,7 +2,7 @@
 
 body, html {
   height: 100%;
-  background-color:#fcfcfc;
+  background-color:##F0EFEE;
   text-align:center;
 }
 
@@ -61,7 +61,7 @@ body, html {
 }
 
 .container {
-  background-color: #a2e6fc;
+  background-color: #F0EFEE;
   display: flex;  
   justify-content: left;
   align-items: left;
