@@ -297,12 +297,17 @@ body, html {
     margin: 20px auto;
   }
 
+  .testimonial-container {
+    display:flex;
+    flex-direction: column;
+  }
+
   .testimonial {
     width: calc(50% - 40px);
   }
   
   .testimonial p{
-    font-size: 14px;
+    font-size: 12px;
   }
 
   .offer {
