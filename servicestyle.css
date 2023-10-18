@@ -8,10 +8,10 @@ body, html {
 
 * {
   margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family:'Poppins', san-serif;
-	scroll-behavior: smooth;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Poppins', san-serif;
+  scroll-behavior: smooth;
 }
 
 .heading{
@@ -31,7 +31,7 @@ body, html {
   text-decoration-thickness: 3px;
   border-radius: 50px 100px;
   border-style: solid;
-  border-width: 2.5px;
+  border-width: 0.5px;
   width: 40%;
   height:auto;
 }
@@ -49,19 +49,19 @@ body, html {
 
 /* Using flexbox to layout the dental team */
 .service-container{
-	min-height: 100%;
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: row;
-	justify-content: center;
-	margin-left:20%;
-	/* Declaring animation*/
-	animation-name:showup;
-	animation: showup 2s;
+min-height: 100%;
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+justify-content: center;
+margin-left:20%;
+/* Declaring animation*/
+animation-name:showup;
+animation: showup 2s;
 }
 
 .container {
-  background-color: #ffffff;
+  background-color:#ffffff;
   display: flex;  
   justify-content: left;
   align-items: left;
