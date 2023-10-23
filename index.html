@@ -20,6 +20,8 @@ Course: CMPT_281_01
 	<link rel="icon" type="image/x-icon" href="favicon.ico">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
 	<div class="topnav">
@@ -30,15 +32,49 @@ Course: CMPT_281_01
 		<a class="logo"> <b class="logo-color1">2nd Avenue</b> <b class="logo-color2">Dental</b></a>
 		<a class="booking" href="booking.html">Request an Appointment</a>
 	</div>
-	
-	<div class="bg-image"></div>
 
-	<div class="bg-text">
-		<h2>Welcome to</h2>
-		<h1>2nd Avenue<br> Dental</h1>
-		<p>Ready to gain that confident smile back?</p>
-		<button onclick="window.location.href='booking.html';">Book Appointment</button>
+	<div class="container">
+		<div class="content">
+				<h1>2nd Dental Clinic</h1>
+				<div>
+					<p>We provide high-quality dental care services</p>
+					<p>with a <span>affordable</span> price <i>&</i> <span>advanced</span> technologies</p>
+				</div>
+
+				<div class="buttons">
+						<a href="Service.html" class="btn-secondary">Services</a>
+						<a href="booking.html" class="btn-primary">Booking</a>
+				</div>
+		</div>
+		<div class="image">
+				<img src="landing-img.png" alt="Dental Clinic">
+		</div>
+</div>
+<div class ="social-proof">
+	<div class="sp-section">
+		<p>Patients</p>
+		<div>
+			<ion-icon name="accessibility-outline"></ion-icon>
+			<p>+1.000</p>
+		</div>
 	</div>
+
+	<div class="sp-section">
+		<p> Smiles</p>
+		<div>
+			<ion-icon name="happy-outline"></ion-icon>
+			<p>+10.000</p>
+		</div>
+	</div>
+
+	<div class="sp-section">
+		<p> Happiness</p>
+		<div>
+			<ion-icon name="heart-half-outline"></ion-icon>
+			<p>  "infinite"</p>
+		</div>
+	</div>
+</div>
 
 	<div class="services-section">
     <h2>Our Services</h2>

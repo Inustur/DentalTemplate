@@ -14,84 +14,87 @@ body, html {
 	scroll-behavior: smooth;
 }
 
-.bg-image {
-  /* The image used */
-  background-image: url("dentist2.jpg");
-
-  /* Add the blur effect */
-  filter: blur(8px);
-  -webkit-filter: blur(8px);
-
-  /* Full height */
-  height: 100%;
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  
-  /**/
-  animation-name: showup;
-  animation: showup 2s;
+/* Define styles for the container */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
 }
 
-/* Position text in the middle of the page/image */
-.bg-text {
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
-  color: white;
-  border: 3px solid #f1f1f1;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  width: 60%;
-  padding: 20px;
-  text-align: center;
+/* Define styles for the content (text and buttons) */
+.content {
+  flex: 1;
+  padding-right: 20px;
 }
 
-.bg-text h1{
-	font-size:80px;
-  font-weight: bold;
+.content h1 {
+  font-size: 4em;
+  margin-bottom: 20px;
   text-decoration: underline;
   text-decoration-color: #FACD11;
   text-decoration-thickness: 3px;
-  margin-bottom: 20px;
-  line-height: 90px;
 }
 
-.bg-text h2{
-  color:#f9f9f9;
-	font-size:20px;
+
+.content p {
+  font-size: 1em;
   font-style: italic;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 
-.bg-text p{
-  font-style: italic;
-  margin-bottom: 10px;
+.buttons {
+  display: flex;
+  gap: 20px;
+  margin-top: 50px;
 }
 
-/*style button*/
-.bg-text button{
-	background-color: #5454C4;
-	border: none;
-	color: white;
-	padding: 15px 32px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	font-size: 16px;
-	opacity: 95%;
-	border-radius: 18px;
-  transition: all 1s;
+.btn-secondary {
+  background-color: transparent;
+  color:#A2B167;
+  font-size: 1.2em;
+  width: 120px;
+  text-align: center;
+  padding:10px;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #A2B167;
+  text-decoration: none;
 }
 
-/*add hover to the booking button*/
-.bg-text button:hover{
-	background-color: #6B70FA;
-  transform: translateY(2.5px);
+.btn-primary{
+  background-color: #A2B167;
+  color:#fff;
+  font-size: 1.2em;
+  width: 120px;
+  text-align: center;
+  padding:10px;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: none;
+  border-width: 2px;
+  text-decoration: none;
+}
+
+.image{
+  background:#ffffff;
+  border-style: solid;
+  border-width: 5px;
+  border-radius: 200px 200px 50px 50px;
+  border-bottom-color: #FACD11;
+  border-right-color: #FACD11;
+  border-bottom-width: 5px;
+  border-left-width: 10px;
+  border-right-width: 2.5px;
+  box-shadow: 0 10px 4px rgba(0, 0, 0, 0.1);
+}
+
+.image img{
+  width: 600px;
+  height: auto;
+  border-width: 5px;
+  border-radius: 200px 200px 50px 50px;
 }
 
 /*background animation*/
@@ -101,6 +104,39 @@ body, html {
 	50%		{opacity:50%;}
 	75%		{opacity:75%;}
 	100%	{opacity:100%;}
+}
+
+.social-proof{
+  position: relative;
+  background-color: #313473;
+  color:#F0EFEE;
+  display: flex;
+  justify-content: center;
+  gap: 150px;
+  align-items: center;
+  top: -7vh;
+  border-radius: 50px 100px;
+  width: 800px;
+  height:80px;
+}
+
+.sp-section ion-icon{
+  font-size: 1.5em;
+  color: #FACD11;
+}
+
+.sp-section p{
+  font-size: 1em;
+}
+
+.sp-section div p{
+  font-style: italic;
+  color:#FACD11
+}
+
+.sp-section div{
+  display: flex;
+  justify-content: space-between;
 }
 
 .services-section {
@@ -262,29 +298,53 @@ body, html {
 }
 
 @media (max-width:700px){
-  .bg-text{
-    width: 80%;
-  }
-  .bg-text h1{
-    font-size: 60px;
-    text-decoration: underline;
-    text-decoration-color: yellow;
-    line-height: 55px;
+  .container {
+    display: flex;
+    flex-direction: column;
   }
 
-  .bg-text h2{
-    margin-bottom: 20px;
-    font-size: 16px;
+  .content {
+    flex: 1;
+    padding-right: 20px;
+    text-align: center;
   }
   
-  .bg-text p{
-    font-size: 12px;
-    margin-top:25px;
+  .content p{
+    font-size: 0.8em;
   }
 
-  .bg-text button{
-    width: 65%;
+  .buttons{
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .btn-primary,
+  .btn-secondary{
+    font-size: 1em;
+  }
 
+  .image{
+    margin-top: 100px;
+  }
+
+  .image img{
+    width: 300px;
+  }
+
+  .social-proof{
+    border-radius: 0 50px 50px 0;
+    max-width:80%;
+    gap:40px;
+    top:0em;
+  }
+
+  .sp-section ion-icon{
+    font-size: 1.5em;
+    color: #FACD11;
+  }
+  
+  .sp-section p{
+    font-size: 0.75em;
   }
 
   .services-container {
